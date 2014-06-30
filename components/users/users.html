@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <title>Users demo page!</title>
+    <link rel="stylesheet" href="../../style/style.css" type="text/css">
+  </head>
+  <body>
+    <div id="content"></div>
+    <script type='text/javascript' src='../../bower_components/requirejs/require.js'></script>
+    <script type='text/javascript' src='../../requirejsconfig.js'></script>
+    <script type='text/javascript'>
+      requirejs.config({
+          baseUrl : '../../'
+      })
+      requirejs(['components/users/users'], function(Users){
+        var template = can.view.mustache('<users hello="hello"></users>');
+        $('#content').html(template({
+          hello: "world!"
+        }));
+        
+      })
+    </script>
+  </body>
+</html>

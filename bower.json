@@ -1,0 +1,14 @@
+{
+  "name": "canjs-app",
+  "version": "0.0.0",
+  "dependencies": {
+    "require-can-renderers": "git://github.com/retro/require-can-renderers.git",
+    "requirejs": "~2.1.11",
+    "canjs": "~2.1.1",
+    "jquery": "~2.1.1",
+    "bootstrap": "~3.2.0",
+    "fontawesome": "~4.1.0",
+    "lesshat": "~3.0.2",
+    "apitizer": "~0.0.4"
+  }
+}
